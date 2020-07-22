@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 <title>Cortex - Machine Learning Made Possible</title>
 <meta name="title" content="Cortex - Machine Learning Made Possible">
-<meta name="description" content="We provide custom Machine and Deep learning solutions for businesses around the world.">
+<meta name="description" content="We provide custom Machine and Deep learning solutions for businesses around the world">
 <meta name="keywords" content="Machine Learning, Data Analysis, natural language processing, cortex, reinforcement learning, intelligent, computer vision, cakery" />
 <meta property="og:image" content="cortexdl.com/images/logo.png" />
 <meta name="robots" content="index, follow" />
@@ -24,41 +24,60 @@
 <meta name="msapplication-TileColor" content="#2d89ef">
 <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
-
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cortexdl.com/">
+<meta property="og:title" content="Cortex - Machine Learning Made Possible">
+<meta property="og:description" content="We provide custom Machine and Deep learning solutions for businesses around the world">
+<meta property="og:image" content="cortexdl.com/images/temp.png">
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://cortexdl.com/">
+<meta property="twitter:title" content="Cortex - Machine Learning Made Possible">
+<meta property="twitter:description" content="We provide custom Machine and Deep learning solutions for businesses around the world">
+<meta property="twitter:image" content="cortexdl.com/images/temp.png">
     <link rel="stylesheet" href="css/style.css">
 <!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 <!-- ScrollReveal CDN -->
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173187419-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173187419-1');
+</script></head>
 
 <body class="bg-light">
-    <div class="py-5 container-fluid">
+    <div class="py-5 bg-white container-fluid">
         <div class="container">
             <nav class="navbar navbar-light">
     <a href="index.html" class="navbar-brand d-flex align-items-center">
         <img class="logo" src="images/logo.png" alt="Cortex">
     </a>
 </nav>            <div class="row">
-    <div class="hero">
+    <div class="hero slide">
         <div class="hero-content container py-5 my-auto">
             <div class="row">
                 <div class="col-lg-6 col-md-8">
                     <h1 class="text-primary fw-600">Welcome to Cortex</h1>
-                    <p class="mb-5">Mauris vel tortor accumsan, faucibus
-                        orci non, varius turpis. Aenean ac eros
-                        libero. Quisque quis sapien in ante
-                        scelerisque volutpat.</p>
+                    <p class="mb-5">We are a full stack end-to-end machine learning developmnet company aimed at creating state of the art models for your business needs.</p>
                     <a href="#">
-    <button class="btn btn-rounded ">
-        Read More
+    <button class="btn btn-rounded shadow-sm">
+        Learn More
         <div style="display: inline-block" class="forward">
             <i class="fa fa-arrow-right"></i>
         </div>
     </button>
 </a>                    <a href="#">
-    <button class="btn btn-rounded ml-2 btn-outline btn-fix">
-        Documentation
+    <button class="btn btn-rounded ml-2 btn-outline shadow-sm btn-fix">
+        Contact Us
         <div style="display: none" class="forward">
             <i class="fa fa-arrow-right"></i>
         </div>
@@ -70,9 +89,9 @@
 </div>        </div>
     </div>
 
-    <div class="container-fluid bg-white">
+    <div class="container-fluid bg-light">
         <div class="container py-5">
-            <div class="row services">
+            <div class="row services slide">
     <div class="col-lg-6 col-sm-12 teaser">
         <h4 class="mb-4"><i class="fa fa-eye"></i>Intelligent Computer Vision</h4>
         <div class="description">
@@ -98,8 +117,8 @@
         </div>
     </div>
 </div>
-<div class="mb-lg-5">
-    <div class="row tools">
+<div class="mb-lg-4">
+    <div class="row tools slide">
         <div class="col-lg-2 col-md-4 mb-4 col-6 mb-lg-0"><img src="images/tools/1.png" alt=""></div>
         <div class="col-lg-2 col-md-4 mb-4 col-6 mb-lg-0"><img src="images/tools/2.png" alt=""></div>
         <div class="col-lg-2 col-md-4 mb-4 col-6 mb-lg-0"><img src="images/tools/3.png" alt=""></div>
@@ -110,9 +129,9 @@
 </div>        </div>
     </div>
 
-    <div class="container-fluid projects">
+    <div class="container-fluid slide projects">
     <div class="container">
-        <h4 class="block-title">Latest Projects</h4>
+        <h4 class="block-title">Features</h4>
         <div class="row">
             <div class="col-lg-6">
                 <div class="project">
@@ -171,7 +190,7 @@
 </div>
     <div class="container">
         <div class="my-5">
-    <div class="contact py-5">
+    <div class="contact slide py-5">
         <div class="inner mx-5">
             <div class="col-lg-8 col-md-8">
                 <div class="text">
@@ -227,11 +246,20 @@
             a Bootstrap theme.</div>
     </div>
 </div>    <script>
-        var slideUp = {
+        var reveal = {
             delay: 200,
             mobile: false,
+            opacity: 0
         };
-        
+        var slide = {
+            delay: 200,
+            mobile: false,
+            opacity: 0,
+            distance: '20px',
+            origin: 'bottom'
+        }
+        ScrollReveal().reveal('.reveal', reveal);
+        ScrollReveal().reveal('.slide', slide);
     </script>
 </body>
 
