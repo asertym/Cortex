@@ -8254,12 +8254,12 @@ html{
 }
 
 ::-moz-selection{
-  color:#102A3D;
+  color:#F9FBFF;
   background-color:#2F55D4
 }
 
 ::selection{
-  color:#102A3D;
+  color:#F9FBFF;
   background-color:#2F55D4
 }
 
