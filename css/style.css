@@ -802,6 +802,12 @@ video {
   color: rgba(16, 42, 61, var(--text-opacity));
 }
 
+.hover\:text-blue:hover{
+  --text-opacity: 1;
+  color: #2F55D4;
+  color: rgba(47, 85, 212, var(--text-opacity));
+}
+
 .underline{
   text-decoration: underline;
 }
@@ -849,6 +855,18 @@ video {
 
 .col-start-7{
   grid-column-start: 7;
+}
+
+.transition{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 html{
