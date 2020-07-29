@@ -1,0 +1,35 @@
+article p{
+  text-align:justify;
+  -webkit-hyphens:auto;
+      -ms-hyphens:auto;
+          hyphens:auto
+}
+
+img.inline.float-right{
+  margin:2rem;
+  margin-right:0;
+  margin-top:0;
+  max-width:40%;
+  -o-object-fit:cover;
+     object-fit:cover
+}
+
+img.inline.float-left{
+  margin:2rem;
+  margin-left:0;
+  margin-top:0;
+  max-width:40%;
+  -o-object-fit:cover;
+     object-fit:cover
+}
+
+ul li{
+  font-size:1.25rem;
+  font-weight:300
+}
+
+ul li:not(:last-of-type){
+  margin-bottom:1rem
+}
+
+/*# sourceMappingURL=maps/about.css.map */
