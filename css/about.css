@@ -23,12 +23,12 @@ img.inline.float-left{
      object-fit:cover
 }
 
-ul li{
+article ul li{
   font-size:1.25rem;
   font-weight:300
 }
 
-ul li:not(:last-of-type){
+article ul li:not(:last-of-type){
   margin-bottom:1rem
 }
 
