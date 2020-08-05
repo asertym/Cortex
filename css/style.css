@@ -917,7 +917,7 @@ button{
   color: rgba(255, 255, 255, var(--text-opacity));
   border-radius: 10px;
   border:2px solid;
-  transition:all 0.15s ease-in-out
+  transition:all 0.25s ease-in-out
 }
 
 button:hover{
@@ -1072,7 +1072,7 @@ section #tools li svg{
   margin-right:-8px;
   border-bottom:2px solid #2F55D4;
   background:transparent;
-  transition:all 0.15s ease-in-out
+  transition:all 0.25s ease-in-out
 }
 
 .touch p a:hover{
@@ -1089,7 +1089,7 @@ section #tools li svg{
 }
 
 .tool img{
-  transition:all 0.15s ease-in-out
+  transition:all 0.25s ease-in-out
 }
 
 .card{
@@ -1100,15 +1100,15 @@ section #tools li svg{
   overflow: hidden;
   margin-bottom: 4rem;
   width:100%;
-  box-shadow:10px 0 0 #D4E1F4;
-  transition:all 0.15s ease-in-out;
+  box-shadow:0 8px 30px rgba(47,85,212,0.12);
+  transition:all 0.25s ease-in-out;
   position:relative;
   bottom:0
 }
 
 .card:hover{
-  bottom:10px;
-  box-shadow:10px 10px 0 #D4E1F4
+  bottom:0px;
+  box-shadow:0 8px 30px rgba(47,85,212,0.25)
 }
 
 .card img{
@@ -1163,7 +1163,7 @@ section #tools li svg{
   top:2px;
   color:inherit;
   background-color:#102A3D;
-  transition:all 0.15s ease-in-out
+  transition:all 0.25s ease-in-out
 }
 
 .card .more:hover::after{
@@ -1171,7 +1171,7 @@ section #tools li svg{
 }
 
 #about{
-  transition:all 0.15s ease-in-out
+  transition:all 0.25s ease-in-out
 }
 
 #about:hover{
@@ -1202,7 +1202,7 @@ footer h1 a{
   margin-left:-1rem;
   border-bottom:4px solid #2F55D4;
   background:transparent;
-  transition:all 0.15s ease-in-out
+  transition:all 0.25s ease-in-out
 }
 
 footer h1 a:hover{
