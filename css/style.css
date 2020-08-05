@@ -889,6 +889,10 @@ html{
   }
 }
 
+html.sr .load-hidden{
+  visibility:hidden
+}
+
 ::-moz-selection{
   color:#F9FBFF;
   background-color:#2F55D4
@@ -1042,18 +1046,10 @@ section p{
 }
 
 section h1{
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
   font-size: 2.88rem;
   display:inline-block;
   clear:both
-}
-
-section h1::after{
-  margin-top: 0.5rem;
-  display:block;
-  content:'';
-  width:85px;
-  border:2px solid black
 }
 
 section #uxfix::after{
@@ -1104,7 +1100,15 @@ section #tools li svg{
   overflow: hidden;
   margin-bottom: 4rem;
   width:100%;
-  box-shadow:0 8px 30px rgba(16,42,61,0.08)
+  box-shadow:10px 0 0 #D4E1F4;
+  transition:all 0.15s ease-in-out;
+  position:relative;
+  bottom:0
+}
+
+.card:hover{
+  bottom:10px;
+  box-shadow:10px 10px 0 #D4E1F4
 }
 
 .card img{
