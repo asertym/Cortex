@@ -1019,21 +1019,6 @@ section h1{
   clear:both
 }
 
-section #uxfix::after{
-  margin-left:auto
-}
-
-section #tools li{
-  text-align:center
-}
-
-section #tools li svg{
-  margin:0 auto;
-  width:50px;
-  height:50px;
-  margin-bottom:25px
-}
-
 .touch p a{
   padding:2px 8px;
   margin-right:-8px;
@@ -1056,7 +1041,28 @@ section #tools li svg{
 }
 
 .tool img{
-  transition:all 0.25s ease-in-out
+  transition:all 0.25s ease-in-out;
+  width:100%;
+  height:auto;
+  -o-object-fit:contain;
+     object-fit:contain
+}
+
+.content{
+  padding: 1rem
+}
+
+.content h3{
+  --text-opacity: 1;
+  color: #102A3D;
+  color: rgba(16, 42, 61, var(--text-opacity));
+  margin-bottom: 1rem;
+  font-size: 1.5rem
+}
+
+.content p{
+  font-weight: 300;
+  font-size:1rem
 }
 
 .card{
@@ -1068,19 +1074,26 @@ section #tools li svg{
   margin-bottom: 4rem;
   width:100%;
   box-shadow:0 8px 30px rgba(47,85,212,0.12);
-  transition:all 0.25s ease-in-out;
   position:relative;
+  transition:all 0.25s ease-in-out;
   bottom:0
-}
-
-.card *{
-  transition:all 0.25s ease-in-out
 }
 
 .card .card-image{
   max-height:170px;
   display:inline-block;
   overflow:hidden
+}
+
+.card h3,.card img{
+  transition:all 0.25s ease-in-out
+}
+
+.card img{
+  width:100%;
+  max-height:180px;
+  -o-object-fit:cover;
+     object-fit:cover
 }
 
 .card:hover{
@@ -1091,7 +1104,7 @@ section #tools li svg{
 }
 
 .card:hover h3{
-  color:white !important
+  color:white
 }
 
 .card:hover img{
@@ -1100,29 +1113,6 @@ section #tools li svg{
 
 .card:hover .more::after{
   background-color:white
-}
-
-.card img{
-  width:100%;
-  -o-object-fit:cover;
-     object-fit:cover
-}
-
-.card .content{
-  padding: 1rem
-}
-
-.card .content h3{
-  --text-opacity: 1;
-  color: #102A3D;
-  color: rgba(16, 42, 61, var(--text-opacity));
-  margin-bottom: 1rem;
-  font-size: 1.5rem
-}
-
-.card .content p{
-  font-weight: 300;
-  font-size:1rem
 }
 
 .card .more{
@@ -1148,14 +1138,6 @@ section #tools li svg{
   color:inherit;
   background-color:#102A3D;
   transition:all 0.25s ease-in-out
-}
-
-#about{
-  transition:all 0.25s ease-in-out
-}
-
-#about:hover{
-  color:#2F55D4
 }
 
 #more{
