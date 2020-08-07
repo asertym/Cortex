@@ -1082,7 +1082,8 @@ section h1{
 .card .card-image{
   max-height:170px;
   display:inline-block;
-  overflow:hidden
+  overflow:hidden;
+  width:100%
 }
 
 .card h3,.card img{
