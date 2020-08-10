@@ -903,6 +903,10 @@ html.sr .load-hidden{
   background-color:#2F55D4
 }
 
+h1,h2,h3,h4,h5{
+  font-weight:bold
+}
+
 button{
   padding-left: 3rem;
   padding-right: 3rem;
@@ -924,6 +928,26 @@ button:hover{
   --border-opacity: 1;
   border-color: #2F55D4;
   border-color: rgba(47, 85, 212, var(--border-opacity))
+}
+
+nav li{
+  margin-left:38px
+}
+
+nav li::after{
+  content:'';
+  display:block;
+  position:relative;
+  top:0.5rem;
+  width:0;
+  opacity:0;
+  border:2px solid #102A3D;
+  transition:0.15s width ease-in-out
+}
+
+nav li:hover::after{
+  opacity:1;
+  width:75%
 }
 
 .underline{
@@ -952,30 +976,6 @@ button:hover{
   right:-1rem
 }
 
-nav li{
-  margin-left:38px
-}
-
-nav li::after{
-  content:'';
-  display:block;
-  position:relative;
-  top:0.5rem;
-  width:0;
-  opacity:0;
-  border:2px solid #102A3D;
-  transition:0.15s width ease-in-out
-}
-
-nav li:hover::after{
-  opacity:1;
-  width:75%
-}
-
-#display{
-  margin-bottom: 2rem
-}
-
 .headshot{
   height:442px
 }
@@ -993,7 +993,7 @@ nav li:hover::after{
   background-repeat:no-repeat
 }
 
-.overview .col-span-6{
+.overview .lg\:col-span-6{
   margin-top: 3rem
 }
 
@@ -1001,10 +1001,6 @@ nav li:hover::after{
   width:100%;
   -o-object-fit:cover;
      object-fit:cover
-}
-
-section h1,section h2,section h3,section h4,section h5{
-  font-weight:bold
 }
 
 section p{
@@ -1015,24 +1011,7 @@ section p{
 section h1{
   padding-bottom: 2rem;
   font-size: 2.88rem;
-  display:inline-block;
-  clear:both
-}
-
-.touch p a{
-  padding:2px 8px;
-  margin-right:-8px;
-  border-bottom:2px solid #2F55D4;
-  background:transparent;
-  transition:all 0.25s ease-in-out
-}
-
-.touch p a:hover{
-  margin-right:0;
-  --text-opacity: 1;
-  color: #fff;
-  color: rgba(255, 255, 255, var(--text-opacity));
-  background-color:#2F55D4
+  display:inline-block
 }
 
 .tool{
@@ -1046,6 +1025,20 @@ section h1{
   height:auto;
   -o-object-fit:contain;
      object-fit:contain
+}
+
+.touch p a{
+  padding:2px 8px;
+  margin-right:-8px;
+  border-bottom:2px solid #2F55D4;
+  background:transparent;
+  transition:all 0.25s ease-in-out
+}
+
+.touch p a:hover{
+  margin-right:0;
+  color:white;
+  background-color:#2F55D4
 }
 
 .content{
@@ -1177,7 +1170,21 @@ footer h1 a:hover{
 }
 
 footer .copyright{
-  opacity:0.75
+  opacity:0.75;
+  font-weight:300;
+  transition:all 0.25s ease-in-out
+}
+
+footer .copyright a:hover::before,footer .copyright a:hover::after{
+  content:'🍰'
+}
+
+footer .copyright a:hover::before{
+  margin-right:5px
+}
+
+footer .copyright a:hover::after{
+  margin-left:5px
 }
 
 .socials ul{
