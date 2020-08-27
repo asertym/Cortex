@@ -1091,6 +1091,10 @@ section h1{
   width:100%
 }
 
+.card .card-image div{
+  max-height:170px
+}
+
 .card h3,.card img{
   transition:all 0.25s ease-in-out
 }
@@ -1100,6 +1104,41 @@ section h1{
   max-height:180px;
   -o-object-fit:cover;
      object-fit:cover
+}
+
+.card p{
+  margin-bottom:3rem
+}
+
+.card .more{
+  position:absolute;
+  bottom:1rem;
+  right:0.5rem
+}
+
+.card .more a{
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
+}
+
+.card .more a::after{
+  margin-left:10px;
+  width:9px;
+  height:15px;
+  content:'';
+  -webkit-mask:url("../images/arrow.svg");
+          mask:url("../images/arrow.svg");
+  -webkit-mask-size:cover;
+          mask-size:cover;
+  display:inline-block;
+  position:relative;
+  top:2px;
+  color:inherit;
+  background-color:#102A3D;
+  transition:all 0.25s ease-in-out
 }
 
 .card:hover{
@@ -1117,33 +1156,8 @@ section h1{
   transform:scale(1.05)
 }
 
-.card:hover .more::after{
+.card:hover .more a::after{
   background-color:white
-}
-
-.card .more{
-  margin-top: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem
-}
-
-.card .more::after{
-  margin-left:10px;
-  width:9px;
-  height:15px;
-  content:'';
-  -webkit-mask:url("../images/arrow.svg");
-          mask:url("../images/arrow.svg");
-  -webkit-mask-size:cover;
-          mask-size:cover;
-  display:inline-block;
-  position:relative;
-  top:2px;
-  color:inherit;
-  background-color:#102A3D;
-  transition:all 0.25s ease-in-out
 }
 
 #more{
