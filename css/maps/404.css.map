@@ -1,0 +1,1 @@
+{"version":3,"sources":["404.scss"],"names":[],"mappings":"AAEA;EACI;AAAU;;AACb;EAEG;AAAiC;;AACpC;EAEG;AAAc","file":"../404.css","sourcesContent":["//404 Styles\n\n.flex img {\n    width: 50%;\n}\n.justify-between a {\n    transition: all 0.25s ease-in-out;\n}\n.justify-between a:hover {\n    color: #2F55D4;\n}"]}

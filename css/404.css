@@ -1,0 +1,13 @@
+.flex img{
+  width:50%
+}
+
+.justify-between a{
+  transition:all 0.25s ease-in-out
+}
+
+.justify-between a:hover{
+  color:#2F55D4
+}
+
+/*# sourceMappingURL=maps/404.css.map */
